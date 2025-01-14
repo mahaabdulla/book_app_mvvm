@@ -1,5 +1,4 @@
-class AssetsData{
-
-  static const root  = '';
-  static const logo  = '${root}aguh';
+class AssetsData {
+  static const root = 'assets/images/';
+  static const logo = '${root}book_logo.jpg';
 }
