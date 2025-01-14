@@ -5,9 +5,12 @@ class SplashViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [
-      Text(''),
-      
-    ],);
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [Text('HELLOW'), Icon(Icons.person)],
+      ),
+    );
   }
 }
