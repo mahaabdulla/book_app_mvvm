@@ -1,5 +1,6 @@
-import 'package:bookly_app/core/utils/assets.dart';
+
 import 'package:bookly_app/features/home/presention/view/widgets/custome_appbar.dart';
+import 'package:bookly_app/features/home/presention/view/widgets/custome_listview_images.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -7,10 +8,10 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Column(
         children: [
-          const CustomeAppBar(),
+          CustomeAppBar(),
           // list of books
           CustomeListViewImage()
         ],
@@ -19,19 +20,3 @@ class HomeViewBody extends StatelessWidget {
   }
 }
 
-class CustomeListViewImage extends StatelessWidget {
-  const CustomeListViewImage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 180,
-      height: 200,
-      decoration: BoxDecoration(
-          color: Colors.red,
-          borderRadius: BorderRadius.circular(30),
-          image: const DecorationImage(
-              image: AssetImage(AssetsData.logo), fit: BoxFit.cover)),
-    );
-  }
-}
