@@ -12,7 +12,7 @@ class HomeViewBody extends StatelessWidget {
       child: Column(
         children: [
           CustomeAppBar(),
-          // list of books
+         
           CustomeListViewImage()
         ],
       ),

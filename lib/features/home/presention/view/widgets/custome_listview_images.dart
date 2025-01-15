@@ -10,7 +10,7 @@ class CustomeListViewImage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: SizedBox(
         width: double.infinity,
-        height: 240,
+        height: MediaQuery.of(context).size.height * 0.3,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: 4,
