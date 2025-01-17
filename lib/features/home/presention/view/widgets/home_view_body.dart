@@ -1,5 +1,4 @@
 import 'package:bookly_app/core/utils/styles.dart';
-import 'package:bookly_app/features/home/presention/view/widgets/best_sellers_list.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/books_listview_builder.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/custome_appbar.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/featured_listview.dart';
@@ -10,7 +9,7 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return  const SafeArea(
         child: CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
@@ -19,7 +18,6 @@ class HomeViewBody extends StatelessWidget {
           children: [
             CustomeAppBar(),
             FeaturedListview(),
-            // CustomeListViewImage(),
             SizedBox(height: 20),
             Padding(
                 padding: EdgeInsets.only(left: 30.0),
@@ -32,7 +30,7 @@ class HomeViewBody extends StatelessWidget {
         )),
         SliverFillRemaining(
           child: BooksListViewBuilder(),
-        )
+        ),
       ],
     ));
   }

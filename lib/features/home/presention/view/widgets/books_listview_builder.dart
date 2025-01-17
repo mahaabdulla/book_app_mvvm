@@ -8,13 +8,18 @@ class BooksListViewBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-       physics: const NeverScrollableScrollPhysics(),
-      padding: EdgeInsets.zero,
-      itemCount: 10,
-      itemBuilder: (ctx, index) {
-        return const BestSellersList();
+    return InkWell(
+        onTap: () {
+        Navigator.pushNamed(context, '/book_details');
       },
+      child: ListView.builder(
+        physics: const NeverScrollableScrollPhysics(),
+        padding: EdgeInsets.zero,
+        itemCount: 15,
+        itemBuilder: (ctx, index) {
+          return const BestSellersList();
+        },
+      ),
     );
   }
 }
