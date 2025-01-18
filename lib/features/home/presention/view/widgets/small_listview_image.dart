@@ -6,7 +6,8 @@ class SmallListViewImages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return SizedBox(
+      height: 150,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: 8,

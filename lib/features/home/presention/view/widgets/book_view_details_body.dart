@@ -37,7 +37,7 @@ class BookViewDetailsBody extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const BookAction(),
-              const SizedBox(height: 50),
+              Expanded(child: const SizedBox(height: 50)),
               const Align(
                   alignment: Alignment.topLeft, child: Text('See More')),
               const SmallListViewImages()
