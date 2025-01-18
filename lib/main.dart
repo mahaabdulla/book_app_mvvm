@@ -1,5 +1,6 @@
 import 'package:bookly_app/core/constant/const.dart';
 import 'package:bookly_app/core/utils/routs.dart';
+import 'package:bookly_app/features/home/presention/view/home.dart';
 import 'package:bookly_app/features/splash/presention/view/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,7 +17,7 @@ class BookApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
         onGenerateRoute: AppRoute.generatedRoute,
-      initialRoute: '/splash',
+      initialRoute: '/home',
       debugShowCheckedModeBanner: false,
       // using dart mood
       theme: ThemeData.dark().copyWith(
@@ -24,7 +25,7 @@ class BookApp extends StatelessWidget {
        // textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
 
-      home: const SplashView(),
+      home: const Home(),
     );
   }
 }

@@ -1,9 +1,9 @@
 import 'package:bookly_app/core/utils/styles.dart';
-import 'package:bookly_app/core/widgets/custome_bottom.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/books_ratings_items.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/custome_appbar_books_detils.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/custome_Book_images.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/details_book_buttoms.dart';
+import 'package:bookly_app/features/home/presention/view/widgets/small_listview_image.dart';
 import 'package:flutter/material.dart';
 
 class BookViewDetailsBody extends StatelessWidget {
@@ -36,7 +36,11 @@ class BookViewDetailsBody extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
               ),
               const SizedBox(height: 30),
-              const BookAction()
+              const BookAction(),
+              const SizedBox(height: 50),
+              const Align(
+                  alignment: Alignment.topLeft, child: Text('See More')),
+              const SmallListViewImages()
             ],
           ),
         ),

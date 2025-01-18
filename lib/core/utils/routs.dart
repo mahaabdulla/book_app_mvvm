@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class AppRoute {
   static Route<dynamic>? generatedRoute(RouteSettings route) {
     switch (route.name) {
-      case '/splah':
+      case '/splash':
         return MaterialPageRoute(builder: (ctx) =>const  SplashView());
       case '/home':
         return MaterialPageRoute(builder: (ctx) =>const  Home());
