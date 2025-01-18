@@ -10,7 +10,7 @@ class CustomeAppBarBooksDetails extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.only(top: 20),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Icon(
             Icons.close,
