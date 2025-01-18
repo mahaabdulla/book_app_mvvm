@@ -1,5 +1,5 @@
-import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/core/utils/styles.dart';
+import 'package:bookly_app/features/home/presention/view/widgets/books_ratings_items.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/custome_appbar_books_detils.dart';
 import 'package:bookly_app/features/home/presention/view/widgets/custome_Book_images.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +29,10 @@ class BookViewDetailsBody extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Opacity(opacity: 0.7, child: Text('The Jungle Book')),
+              const SizedBox(height: 5),
+              const BooksRitingItems(
+                mainAxisAlignment: MainAxisAlignment.center,
+              )
             ],
           ),
         ),

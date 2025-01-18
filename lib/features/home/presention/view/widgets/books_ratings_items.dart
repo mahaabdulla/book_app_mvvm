@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
 class BooksRitingItems extends StatelessWidget {
-  const BooksRitingItems({
-    super.key,
-  });
+  const BooksRitingItems(
+      {super.key, this.mainAxisAlignment = MainAxisAlignment.start});
 
+  final MainAxisAlignment mainAxisAlignment;
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        Text('39'),
-        SizedBox(width: 80),
+    return Row(
+      mainAxisAlignment: mainAxisAlignment,
+      children: const [
         Icon(
           Icons.star,
           color: Colors.yellow,
         ),
-        SizedBox(width: 4),
+        SizedBox(width: 6),
         Text('34'),
-        SizedBox(width: 10),
+        SizedBox(width: 5),
         Text('(60)'),
       ],
     );

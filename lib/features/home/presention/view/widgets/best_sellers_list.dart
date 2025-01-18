@@ -30,14 +30,22 @@ class BestSellersList extends StatelessWidget {
               SizedBox(
                   width: MediaQuery.of(context).size.width * 0.5,
                   child: const Text(
-                    'data kjiu  oiu pk aret aoakdiuy asfrgty oiu o',
+                    'data kjiu  oiu pk aret aoakdiuy',
                     style: Styles.textStyle18,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   )),
-              const SizedBox(height: 14),
+              const SizedBox(height: 10),
               const Text('3.5 reviw'),
-              const BooksRitingItems()
+              const Row(
+                children: [
+                  Text('39\$'),
+                  SizedBox(
+                    width: 100,
+                  ),
+                  BooksRitingItems(),
+                ],
+              )
             ],
           )
         ]),
