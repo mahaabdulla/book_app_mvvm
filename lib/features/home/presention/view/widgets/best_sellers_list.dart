@@ -16,14 +16,14 @@ class BestSellersList extends StatelessWidget {
         height: 120,
         child: Row(children: [
           AspectRatio(
-            aspectRatio: 2.5 / 4,
+            aspectRatio: 3 / 4,
             child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
                         image: AssetImage(AssetsData.haikyu)))),
           ),
-          const SizedBox(width: 50),
+          const SizedBox(width: 30),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
