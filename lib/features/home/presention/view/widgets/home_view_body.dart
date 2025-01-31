@@ -31,7 +31,6 @@ class HomeViewBody extends StatelessWidget {
         SliverFillRemaining(
           child: BooksListViewBuilder(),
         ),
-       
       ],
     ));
   }

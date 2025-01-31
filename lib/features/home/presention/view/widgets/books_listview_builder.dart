@@ -9,7 +9,7 @@ class BooksListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: () {
+      onTap: () {
         Navigator.pushNamed(context, '/book_details');
       },
       child: ListView.builder(

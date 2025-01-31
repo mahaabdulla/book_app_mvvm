@@ -7,15 +7,11 @@ class AppRoute {
   static Route<dynamic>? generatedRoute(RouteSettings route) {
     switch (route.name) {
       case '/splash':
-        return MaterialPageRoute(builder: (ctx) =>const  SplashView());
+        return MaterialPageRoute(builder: (ctx) => const SplashView());
       case '/home':
-        return MaterialPageRoute(builder: (ctx) =>const  Home());
+        return MaterialPageRoute(builder: (ctx) => const Home());
       case '/book_details':
-        return MaterialPageRoute(builder: (ctx) =>const  BookViewDetails());
-
-    
-
+        return MaterialPageRoute(builder: (ctx) => const BookViewDetails());
     }
-  
   }
 }

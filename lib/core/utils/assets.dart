@@ -5,5 +5,4 @@ class AssetsData {
   static const haikyu = '${root}Haikyū.jpg';
   static const slamdunk = '${root}slame_dank_saguragi.jpg';
   static const majed = '${root}kabten_majes.jpg';
-
 }

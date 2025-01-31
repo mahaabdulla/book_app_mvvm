@@ -9,15 +9,13 @@ class CustomeAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.only(top: 20.0),
-      child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Text(
-              'Bookly App',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            Icon(Icons.search, size: 30)
-          ]),
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+        Text(
+          'Bookly App',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+        Icon(Icons.search, size: 30)
+      ]),
     );
   }
 }
