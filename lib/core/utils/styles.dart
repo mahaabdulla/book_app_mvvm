@@ -8,3 +8,4 @@ abstract class Styles {
   static const textStyle16 = TextStyle(fontSize: 26);
   static const textStyle14 = TextStyle(fontSize: 14);
 }
+

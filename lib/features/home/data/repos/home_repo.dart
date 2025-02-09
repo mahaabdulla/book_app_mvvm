@@ -4,7 +4,6 @@ import 'package:dartz/dartz.dart';
 
 // repo DP
 abstract class HomeRepo {
-  
-  Future<Either<Failure, List<BookModel>>> feachBestSellerBooks();
+  Future<Either<Failure, List<BookModel>>> feachNewstBooks();
   Future<Either<Failure, List<BookModel>>> feachFeatucreBooks();
 }

@@ -24,29 +24,33 @@ class BestSellersList extends StatelessWidget {
                         image: AssetImage(AssetsData.haikyu)))),
           ),
           const SizedBox(width: 30),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
-                  child: const Text(
-                    'data kjiu  oiu pk aret aoakdiuy',
-                    style: Styles.textStyle18,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  )),
-              const SizedBox(height: 10),
-              const Text('3.5 reviw'),
-              const Row(
-                children: [
-                  Text('39\$'),
-                  SizedBox(
-                    width: 100,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: const Text(
+                      'data kjiu  oiu pk aret aoakdiuy',
+                      style: Styles.textStyle18,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    )),
+                const SizedBox(height: 10),
+                const Text('3.5 reviw'),
+                const Expanded(
+                  child: Row(
+                    children: [
+                      Text('39\$'),
+                      SizedBox(
+                        width: 80,
+                      ),
+                      BooksRitingItems(),
+                    ],
                   ),
-                  BooksRitingItems(),
-                ],
-              )
-            ],
+                )
+              ],
+            ),
           )
         ]),
       ),
