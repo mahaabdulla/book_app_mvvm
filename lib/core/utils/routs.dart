@@ -1,5 +1,6 @@
-import 'package:bookly_app/features/home/presention/view/book_view_details.dart';
-import 'package:bookly_app/features/home/presention/view/home.dart';
+
+import 'package:bookly_app/features/home/presention/view/pages/book_view_details.dart';
+import 'package:bookly_app/features/home/presention/view/pages/home.dart';
 import 'package:bookly_app/features/splash/presention/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class AppRoute {
       case '/home':
         return MaterialPageRoute(builder: (ctx) => const Home());
       case '/book_details':
-        return MaterialPageRoute(builder: (ctx) => const BookViewDetails());
+        return MaterialPageRoute(builder: (_) => const BookViewDetails());
     }
   }
 }
